@@ -21,6 +21,9 @@ spec:
     path: /person/personopplysninger/internal/isReady
     initialDelay: 10
   accessPolicy:
+    inbound:
+      rules:
+        - application: personopplysninger-api
     outbound:
       external:
         - host: nav.no
